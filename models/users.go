@@ -24,7 +24,7 @@ func LoginUser(username, password, email string) (uint, error) {
 	hashedString := hex.EncodeToString(hashedByte[:])
 
 	var user User
-	err := db.First(&user).Where("username = ? AND password = ? AND email = ?", username, hashedString, email).Error
+	err := db.Where("username = ? AND password = ? AND email = ?", username, hashedString, email).First(&user).Error
 	return user.ID, err
 }
 
