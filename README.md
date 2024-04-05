@@ -400,4 +400,4 @@ Feel free to customize and expand upon this project to meet your specific use ca
 
 Enjoy processing orders efficiently with RabbitMQ and Go!
 
-Copyright 2023, Max Base
+Copyright 2023, Alireza Arzehgar
